@@ -1,3 +1,9 @@
+/* Self-hosted fonts (latin subset). Newsreader is variable: weight + optical size. */
+@font-face { font-family: "Newsreader"; src: url(fonts/newsreader.woff2) format("woff2"); font-weight: 400 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Newsreader"; src: url(fonts/newsreader-italic.woff2) format("woff2"); font-weight: 400 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url(fonts/plex-mono-400.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url(fonts/plex-mono-500.woff2) format("woff2"); font-weight: 500; font-display: swap; }
+
 /* Design tokens. Light is default; dark follows the OS. */
 :root {
   --paper: oklch(97% 0.008 85);
@@ -259,6 +265,8 @@ dt { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
 }
 
 .note { color: var(--muted); }
+
+.also { color: var(--muted); margin: 0; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
 
 .tags {
   list-style: none;

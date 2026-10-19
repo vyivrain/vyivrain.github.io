@@ -11,9 +11,7 @@
   <meta property="og:url" content="https://vyivrain.github.io/">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -87,15 +85,11 @@
           <ul class="tags"><li>Go</li><li>Bubble Tea</li><li>SQLite</li><li>MCP</li></ul>
         </article>
 
-        <article class="project">
-          <h3><a href="https://github.com/vyivrain/codecrafters-kafka-go">Kafka Broker <span class="arrow" aria-hidden="true">↗</span></a></h3>
-          <p>
-            A toy broker written from scratch that speaks Kafka’s binary wire protocol over TCP,
-            serves concurrent clients and answers topic queries by parsing the KRaft metadata log.
-            Also built the same way: an HTTP/1.1 server and a small shell.
-          </p>
-          <ul class="tags"><li>Go</li><li>Wire protocols</li><li>Concurrency</li></ul>
-        </article>
+        <p class="also">
+          Also built from scratch in Go, through CodeCrafters:
+          a <a href="https://github.com/vyivrain/codecrafters-kafka-go">Kafka broker</a> that speaks the binary wire protocol,
+          an HTTP/1.1 server and a small shell.
+        </p>
       </section>
 
       <section id="work" aria-labelledby="h-work">
