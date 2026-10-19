@@ -60,7 +60,7 @@ p { margin: 0 0 1rem; }
 }
 
 /* Shared mono label style */
-.meta, .toc, .social, .btn, h2 span, .project-no, .tags, .note,
+.meta, .toc, .social, .btn, .tags, .note,
 .when, .role-line, dt, footer, .small {
   font-family: var(--mono);
   font-size: .75rem;
@@ -126,8 +126,6 @@ p { margin: 0 0 1rem; }
     color: var(--rail-muted);
     text-decoration: none;
 
-    span { width: 1.5rem; opacity: .55; transition: color .2s, opacity .2s; }
-
     &::before {
       content: "";
       width: 1.25rem;
@@ -139,7 +137,6 @@ p { margin: 0 0 1rem; }
 
     &:hover, &.is-active {
       color: var(--rail-ink);
-      span { color: var(--accent); opacity: 1; }
       &::before { width: 3rem; background: var(--accent); opacity: 1; }
     }
   }
@@ -190,9 +187,6 @@ main {
 section { margin-bottom: clamp(5rem, 12vw, 8rem); }
 
 h2 {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
   font-size: clamp(1.75rem, 3.5vw, 2.25rem);
   font-weight: 400;
   font-style: italic;
@@ -201,7 +195,14 @@ h2 {
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--ink);
 
-  span { color: var(--accent); font-style: normal; }
+  &::before {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin-bottom: 1.25rem;
+    background: var(--accent);
+  }
 }
 
 h3 { font-weight: 500; line-height: 1.2; margin: 0; }
@@ -242,20 +243,11 @@ dt { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
 /* Projects */
 
 .project {
-  display: grid;
-  grid-template-columns: 3rem 1fr;
-  gap: 1rem;
   padding: 2rem 0;
   border-bottom: 1px solid var(--rule);
 
   &:first-of-type { padding-top: 0; }
   &:last-of-type { border-bottom: 0; }
-
-  @media (max-width: 40rem) {
-    grid-template-columns: 1fr;
-    gap: .25rem;
-    .project-no { padding-top: 0; }
-  }
 
   h3 {
     font-size: clamp(1.6rem, 3vw, 2rem);
@@ -266,13 +258,6 @@ dt { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
   }
 
   &:hover .arrow { transform: translate(3px, -3px); }
-}
-
-.project-no {
-  color: var(--accent);
-  font-size: .85rem;
-  padding-top: .65rem;
-  margin: 0;
 }
 
 .arrow {
