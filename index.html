@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oleksandr Verhun — Backend Engineer</title>
+  <meta name="description" content="Senior backend engineer in Sofia. Ruby on Rails, Python and Go. APIs, event-driven pipelines and making slow systems fast.">
+  <meta property="og:title" content="Oleksandr Verhun — Backend Engineer">
+  <meta property="og:description" content="Senior backend engineer in Sofia. APIs, event-driven pipelines and making slow systems fast.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vyivrain.github.io/">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="masthead wrap">
+    <p class="kicker">Senior Software Engineer · Sofia, Bulgaria</p>
+    <h1>Oleksandr Verhun</h1>
+    <p class="lede">
+      I build backends for high-load systems: APIs, event-driven data pipelines,
+      and distributed services. I’m at my best making slow systems fast and
+      untangling complex business logic. I’ve been doing it for more than ten
+      years, mostly in Ruby on Rails and Python, and lately more and more in Go.
+    </p>
+    <nav class="links" aria-label="Contact">
+      <a href="https://github.com/vyivrain">GitHub</a>
+      <a href="https://www.linkedin.com/in/oleksandr-verhun-a4ba598b">LinkedIn</a>
+      <a id="email" href="#contact" data-u="stranger9983" data-d="gmail.com">Email</a>
+      <a class="cv" href="Oleksandr-Verhun-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+
+    <section aria-labelledby="h-projects">
+      <h2 id="h-projects"><span class="num">01</span>Things I’ve built</h2>
+
+      <article class="project">
+        <header>
+          <h3><a href="https://github.com/vyivrain/consilium">Consilium</a></h3>
+          <p class="tags">Go · TCP · Ollama</p>
+        </header>
+        <p>
+          Several LLMs argue about a question until they agree. A hub coordinates
+          concurrent workers over a custom JSON-over-TCP protocol. Each worker runs a
+          different local model, and consensus is scored by confidence-weighted
+          agreement, with configurable timeouts, thresholds and an optional
+          verification round.
+        </p>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3><a href="https://github.com/vyivrain/terminal_fit_recorder">Terminal Fit Recorder</a></h3>
+          <p class="tags">Go · Bubble Tea · SQLite · MCP</p>
+        </header>
+        <p>
+          A full-screen terminal app for logging workouts and generating training
+          plans from each person’s history through Claude, Codex or OpenCode, and
+          from Telegram too. It turns freeform notes (Ukrainian included) into
+          structured workouts and exposes the history to AI assistants as an MCP server.
+        </p>
+        <p class="aside">~12K lines of Go, a third of it tests · race-detector CI · checksummed releases for Linux, macOS and Windows</p>
+      </article>
+
+      <article class="project">
+        <header>
+          <h3><a href="https://github.com/vyivrain/codecrafters-kafka-go">Kafka Broker</a></h3>
+          <p class="tags">Go · Kafka wire protocol</p>
+        </header>
+        <p>
+          A toy broker written from scratch that speaks Kafka’s binary protocol over
+          TCP and serves concurrent clients. It answers topic queries by parsing the
+          KRaft cluster metadata log. I also wrote an HTTP/1.1 server and a small shell
+          the same way, through CodeCrafters.
+        </p>
+      </article>
+    </section>
+
+    <section aria-labelledby="h-work">
+      <h2 id="h-work"><span class="num">02</span>Work</h2>
+
+      <figure class="stat">
+        <p class="stat-figure">5–30K <span aria-hidden="true">→</span><span class="sr-only">to</span> ~0</p>
+        <figcaption>
+          daily timeout errors on Corva’s API at peak load, after shard-key filters,
+          targeted indexes, rewritten aggregation pipelines and lazier database connections.
+        </figcaption>
+      </figure>
+
+      <ol class="timeline">
+        <li>
+          <p class="when">2021 — now</p>
+          <div>
+            <h3>Corva <span class="role">Senior Software Engineer</span></h3>
+            <p>
+              A high-load analytics platform for oil and gas drilling. I own features end to end
+              on a three-person API team: I designed the subscription system every customer
+              company runs on, built self-service data apps on the real-time drilling pipeline,
+              and rebuilt scheduling so time-based apps stopped hitting AWS Lambda limits.
+              I also drove our adoption of Prometheus, OpenTelemetry and Grafana.
+            </p>
+          </div>
+        </li>
+        <li>
+          <p class="when">2019 — 2021</p>
+          <div>
+            <h3>Brightgrove <span class="role">Software Engineer</span></h3>
+            <p>
+              Sole API developer on a platform for auditors’ year-end confirmations. I owned the
+              backend architecture, the confirmation workflow API and document storage.
+            </p>
+          </div>
+        </li>
+        <li>
+          <p class="when">2017 — 2019</p>
+          <div>
+            <h3>SQA Solution <span class="role">Full Stack Developer</span></h3>
+            <p>
+              Outstaffed to VerticalResponse, an email marketing platform. I worked on features,
+              performance and framework upgrades.
+            </p>
+          </div>
+        </li>
+        <li>
+          <p class="when">2014 — 2017</p>
+          <div>
+            <h3>Freelance <span class="role">Full Stack Developer</span></h3>
+            <p>
+              Client web and mobile projects end to end, including a real-estate platform with an
+              email campaign builder and a pet listings marketplace.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="h-tools">
+      <h2 id="h-tools"><span class="num">03</span>Toolbox</h2>
+      <dl class="toolbox">
+        <div><dt>Languages</dt><dd>Ruby, Rails, Python, FastAPI, Go, JavaScript</dd></div>
+        <div><dt>Data</dt><dd>MongoDB (sharded), PostgreSQL, PostGIS, Redis, SQLite</dd></div>
+        <div><dt>Messaging</dt><dd>Kafka, RabbitMQ, SQS / SNS</dd></div>
+        <div><dt>Infra</dt><dd>AWS, Docker, Kubernetes, GitHub Actions</dd></div>
+        <div><dt>Observability</dt><dd>Prometheus, OpenTelemetry, Grafana</dd></div>
+        <div><dt>AI</dt><dd>LLM integrations, MCP, coding agents</dd></div>
+      </dl>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="h-contact">
+      <h2 id="h-contact"><span class="num">04</span>Say hello</h2>
+      <p>
+        Open to full-time roles, remote or hybrid. I speak Ukrainian, Russian and English,
+        and a bit of Polish. The full CV with details is
+        <a href="Oleksandr-Verhun-CV.pdf" download>one click away</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>MSc Computer Engineering, Igor Sikorsky Kyiv Polytechnic Institute · © <span id="year">2026</span></p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
