@@ -108,18 +108,6 @@ p { margin: 0 0 1rem; }
 
 .meta { color: var(--rail-muted); margin: 0; }
 
-.status {
-  color: var(--rail-ink);
-  &::before {
-    content: "";
-    display: inline-block;
-    width: .45rem; height: .45rem;
-    margin-right: .4rem;
-    border-radius: 50%;
-    background: oklch(75% 0.17 145);
-    vertical-align: .05em;
-  }
-}
 
 .role { font-style: italic; font-size: 1.25rem; color: var(--rail-muted); margin: 0; }
 
@@ -314,28 +302,6 @@ dt { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
 
 /* Work */
 
-.stat {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: end;
-  gap: 1rem 2.5rem;
-  margin: 0 0 4rem;
-
-  @media (max-width: 40rem) { grid-template-columns: 1fr; }
-
-  figcaption { color: var(--muted); max-width: 26rem; padding-bottom: .6rem; }
-}
-
-.stat-figure {
-  font-size: clamp(4.5rem, 12vw, 8rem);
-  font-weight: 400;
-  line-height: .85;
-  letter-spacing: -0.05em;
-  font-variant-numeric: lining-nums;
-  margin: 0;
-
-  .arrow { font-size: .55em; padding: 0 .12em; vertical-align: .18em; }
-}
 
 .timeline {
   list-style: none;
