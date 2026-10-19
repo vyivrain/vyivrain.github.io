@@ -308,9 +308,9 @@ dt { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
 .when { color: var(--muted); margin: .5rem 0 0; }
 .role-line { color: var(--accent); margin: .25rem 0 .75rem; }
 
-/* Toolbox */
+/* Skills */
 
-.toolbox {
+.skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem 2.5rem;
