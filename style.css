@@ -190,7 +190,7 @@ main {
   margin-inline: auto;
 }
 
-section { margin-bottom: 3rem; }
+section { margin-bottom: 4rem; }
 
 h2 {
   font-size: clamp(1.75rem, 3.5vw, 2.25rem);
@@ -298,6 +298,7 @@ dt { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
     border-top: 1px solid var(--rule);
 
     &:first-child { border-top: 0; padding-top: 0; }
+    &:last-child { padding-bottom: 0; }
 
     @media (max-width: 40rem) { grid-template-columns: 1fr; gap: .25rem; }
   }
